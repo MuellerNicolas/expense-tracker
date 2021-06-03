@@ -15,7 +15,7 @@ services:
 
   expensetrackerbackend:
     container_name: backend
-    image: docker.pkg.github.com/muellernicolas/expense-tracker-backend/expensetrackerbackend:latest
+    image: docker.pkg.github.com/muellernicolas/expense-tracker-backend/expense-tracker-backend:latest
     ports:
     - 8080:8080
     
