@@ -25,6 +25,18 @@ services:
     image: docker.pkg.github.com/muellernicolas/expense-tracker-frontend/expense-tracker-frontend:latest
     ports:
     - 8081:80
+  
+  mongodatabase:
+    image : mongo
+    container_name: mongodb
+    volumes:
+    - 'mongodata:/data/db'
+    ports:
+    - 27017:27017
+    restart: unless-stopped
+
+volumes:
+  mongodata:
     
     
 
